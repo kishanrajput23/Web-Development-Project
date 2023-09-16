@@ -4,3 +4,4 @@
 |  Project Name  |  Preview  |
 |:--------------:|:---------:|
 |  [1. Basic Gym Webpage](https://github.com/kishanrajput23/Web-Development-Project/tree/main/Projects/Gym_Webpage)  |  [Click Here](https://github.com/kishanrajput23/Web-Development-Project/blob/main/Projects/Gym_Webpage/README.md)  |
+|  [2. Responsive Online Food Shop](https://github.com/kishanrajput23/Web-Development-Project/tree/main/Projects/Responsive_Online_Food_Shop)  |  [Click Here](https://github.com/kishanrajput23/Web-Development-Project/blob/main/Projects/Responsive_Online_Food_Shop/README.md)  |
