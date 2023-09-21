@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: rgb(255, 111, 0);
+    min-height: 100vh;
+    border: solid green 15px;
+}
+
+.content {
+    max-width: 900px;
+    margin: 50px auto;
+}
+
+#top_section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+#top_section img {
+    width: 300px;
+    border-radius: 20px;
+    border: solid black 2px;
+}
+
+#top_section h1 {
+    font-size: 60px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: azure;
+}
+
+#top_section h4 {
+    font-size: 30px;
+    font-weight: bold;
+    color: azure;
+    text-align: end;
+}
+
+#first_main {
+    margin-top: 40px;
+}
+
+#first_main h1 {
+    font-size: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: rgb(27, 27, 211)
+}
+
+#first_main p {
+    font-size: 17px;
+    color: azure;
+    text-align:justify;
+    line-height: 30px;
+    letter-spacing: 1.2px;
+}
+
+#second_main {
+    margin-top: 40px;
+}
+#second_main h2 {
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(27, 27, 211);
+    margin-bottom: 20px;
+}
+
+#second_main ul {
+    margin-left: 50px;
+}
+
+#second_main ul li p {
+    font-size: 17px;
+    color: azure;
+    line-height: 30px;
+    letter-spacing: 1.2px;
+}
+
+footer {
+    margin: 20px 0;
+    font-size: 17px;
+    color: azure;
+    letter-spacing: 1.2px;
+    text-align: end;
+}
+
+footer a {
+    color: blue;
+}
