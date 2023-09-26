@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&family=Merriweather:ital,wght@1,300&family=Roboto:ital,wght@0,100;0,300;1,100;1,300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    line-height: 1.4;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+}
+
+.header {
+    background-image: url(images/developer.png);
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.text {
+    color: white;
+    width: 900px;
+    margin: 0 auto;
+    padding-top: 80px;
+    padding-left: 90px;
+}
+
+.lg_text {
+    font-size: 60px;
+    font-weight: 400;
+}
+
+.black_box {
+    background-color: black;
+    padding: 20px;
+}
+
+.black_box h2 {
+    color: white;
+    font-weight: 300;
+    font-size: 70px;
+    text-align: center;
+}
+
+.black_box h2 span {
+    font-weight: 400;
+    font-size: 90px;
+}
+
+.work {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    margin: 50px auto;
+    max-width: 1200px;
+}
+
+.grid_item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    max-width: 320px;
+    height: 380px;
+    border-radius: 20px;
+    box-shadow: 3px 5px 5px rgba(1, 1, 1, 0.2);
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: scale(1.04);
+    box-shadow: 3px 5px 5px rgba(1, 1, 1, 0.5);
+    transition: 0.2s ease-in-out;
+}
+
+.card_content {
+    padding: 20px;
+    text-align: justify
+}
+
+.card_content h3 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.bottom {
+    display: flex;
+}
+
+.contact {
+    background-color: rgb(4, 127, 4);
+}
+
+.about {
+    background-color: rgb(177, 4, 4);
+}
+
+.contact, .about {
+    min-height: 300px;
+    padding: 32px;
+    color: white;
+}
+
+.contact h2, .about h2 {
+    font-size: 54px;
+}
+
+.contact p, .about p {
+    margin-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+    text-transform: uppercase;
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+
+@media (max-width: 786px) {
+    .header {
+        min-height: 50vh;
+    }    
+
+    .text {
+    /* text-align: center; */
+    padding-top: 30px;
+    padding-left: 20px;
+    }
+
+    .lg_text {
+        font-size: 30px;
+    }
+
+    .black_box h2 {
+        font-weight: 100;
+        font-size: 35px;
+        /* text-align: center; */
+    }
+    
+    .black_box h2 span {
+        font-weight: 200;
+        font-size: 70px;
+    }
+
+    .bottom {
+        flex-direction: column;
+    }
+
+    .contact h2, .about h2 {
+        font-size: 44px;
+    }
+}
