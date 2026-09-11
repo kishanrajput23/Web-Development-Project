@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodDash</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <a href="#" id="logo-link" style="text-decoration: none; color: inherit;"><h1>FoodDash</h1></a>
+                <button id="cart-button" class="cart-button">
+                    <span class="material-icons">shopping_cart</span>
+                    <span id="cart-count" class="cart-count">0</span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section id="restaurants-view">
+            <div class="search-container">
+                <input type="search" id="search-input" placeholder="Search restaurants or cuisine...">
+            </div>
+            <div id="featured-items-container">
+                <h2>Popular Items</h2>
+                <div id="featured-items" class="grid"></div>
+            </div>
+            <div>
+                <h2>Restaurants</h2>
+                <div id="restaurant-list" class="grid"></div>
+            </div>
+        </section>
+
+        <section id="menu-view" class="hidden">
+            <button id="back-to-restaurants" class="back-button"><span class="material-icons">arrow_back</span> Restaurants</button>
+            <h2 id="menu-restaurant-name"></h2>
+            <div id="menu-list" class="grid"></div>
+        </section>
+
+        <section id="cart-view" class="hidden">
+            <h2>Your Cart</h2>
+            <div id="cart-items"></div>
+            <div id="cart-total"></div>
+            <button id="checkout-button" class="button-primary">Proceed to Checkout</button>
+            <button id="close-cart-button" class="button-secondary">Close</button>
+        </section>
+
+        <section id="checkout-view" class="hidden">
+            <h2>Checkout</h2>
+            <form id="checkout-form">
+                <input type="text" placeholder="Name" required>
+                <input type="email" placeholder="Email" required>
+                <input type="text" placeholder="Address" required>
+                <input type="tel" placeholder="Phone Number" required>
+                <button type="submit" class="button-primary">Place Order</button>
+            </form>
+            <button id="back-to-cart" class="back-button"><span class="material-icons">arrow_back</span> Back to Cart</button>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Contact Us</h4>
+                    <p>123 Foodie Lane, Flavor Town, USA</p>
+                    <p>Email: info@fooddash.com</p>
+                    <p>Phone: (123) 456-7890</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <a href="#">Facebook</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">Instagram</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Privacy Policy</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2025 Fooddash | All rights Reserved
+            </div>
+        </div>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
